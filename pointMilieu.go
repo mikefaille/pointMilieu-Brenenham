@@ -19,12 +19,12 @@ func brenhenham(x1 int, y1 int, x2 int, y2 int) {
 
 
 	for x := x1; x <= x2; x++ {
-		println("x = ", x, ", y = ", y)
+		println("x = ", x, ", y = ", y, "d =", d)
 		if d <= 0 {
-			println("if \n d =", d, " , incCE =", incCE, "\n")
+			println("if d <= 0: true \n d =", d, " , incCE =", incCE, "\n")
 			d += incCE
 		} else {
-			println("else \n d =", d, ",  incCE =", incNE, "\n")
+			println("if d <= 0: false \n d =", d, ",  incCE =", incNE, "\n")
 			d += incNE
 			y++
 		}
