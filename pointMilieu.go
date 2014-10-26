@@ -19,7 +19,7 @@ func brenhenham(x1 int, y1 int, x2 int, y2 int) {
 
 
 	for x := x1; x <= x2; x++ {
-		println("(",x, ",", y, ")->setPixel(x,y), d ", d)
+		println("(",x, ",", y, ")->setPixel(x,y), d =", d)
 		if d <= 0 {
 			println("if d <= 0: true \n d =", d, " , incCE =", incCE, "\n")
 			d += incCE
