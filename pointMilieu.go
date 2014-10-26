@@ -1,5 +1,7 @@
 package main
 
+// See https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm
+
 func main() {
 	brenhenham(0,0,10,6)
 
@@ -13,7 +15,7 @@ func brenhenham(x1 int, y1 int, x2 int, y2 int) {
 	incNE := 2 * dy - 2 * dx
 	d := 2 * dy - dx
 	y := y1
-	println("dx =", dx, ", dy=", dy, ", incCE = ", incCE, ", d =",  d, ", y =", y, "\n" )
+	println("dx =", dx, ", dy=", dy, ", incCE = ", incCE, "incNE = ", incNE, ", d =",  d, ", y =", y, "\n" )
 
 
 	for x := x1; x <= x2; x++ {
